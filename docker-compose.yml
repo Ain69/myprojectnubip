@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest  # Використовуємо офіційний образ PostgreSQL
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: user  # Ім'я користувача БД
+      POSTGRES_PASSWORD: password  # Пароль для користувача
+      POSTGRES_DB: mydb  # Назва бази даних
+    ports:
+      - "5432:5432"  # Проксі порту для підключення до контейнера (localhost:5432)
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Зберігання даних бази поза контейнером
+
+volumes:
+  postgres_data:  # Це дозволить зберігати дані на хості

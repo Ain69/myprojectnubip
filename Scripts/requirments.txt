@@ -1,0 +1,2 @@
+deep-translator==1.9.1
+langdetect==1.0.9

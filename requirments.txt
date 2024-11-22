@@ -1,0 +1,14 @@
+pip install virtualenv
+
+pip install googletrans==4.0.0-rc1
+pip install langdetect
+
+pip install deep-translator langdetect
+
+pip install Faker==0.7.4
+pip install pandas openpyxl
+pip install matplotlib
+
+pip install jupyterlab
+pip install tk
+pip install --upgrade matplotlib numpy
